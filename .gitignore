@@ -1,0 +1,21 @@
+# --- Backend (Python) ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/
+backend/.env
+
+# --- Frontend (Node / Next.js) ---
+node_modules/
+.next/
+out/
+frontend/.env.local
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store

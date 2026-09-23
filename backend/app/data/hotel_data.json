@@ -1,0 +1,122 @@
+{
+  "hotel": {
+    "name": "Grand Horizon Hotel",
+    "description": "Grand Horizon Hotel is a modern 4-star property located in the heart of the city, offering comfortable rooms, an outdoor pool, and easy access to major business and tourist districts.",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00",
+    "address": "221 Horizon Avenue, Pune, Maharashtra, India"
+  },
+  "amenities": [
+    {
+      "name": "Swimming Pool",
+      "description": "Outdoor swimming pool open daily from 6:00 AM to 9:00 PM, located on the 2nd floor terrace."
+    },
+    {
+      "name": "Wi-Fi",
+      "description": "Free high-speed Wi-Fi is available throughout the hotel, including all guest rooms and public areas."
+    },
+    {
+      "name": "Parking",
+      "description": "Complimentary self-parking is available for all hotel guests, subject to availability."
+    },
+    {
+      "name": "Gym",
+      "description": "A 24-hour fitness center is available on the ground floor for all in-house guests."
+    },
+    {
+      "name": "Restaurant",
+      "description": "The in-house restaurant, Horizon Kitchen, serves breakfast, lunch, and dinner daily."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "standard-king",
+      "name": "Standard King",
+      "bedConfig": "1 King Bed",
+      "maxAdults": 2,
+      "pricePerNight": 4500,
+      "currency": "INR",
+      "amenities": ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Mini Fridge"],
+      "totalInventory": 6
+    },
+    {
+      "id": "deluxe-twin",
+      "name": "Deluxe Twin",
+      "bedConfig": "2 Twin Beds",
+      "maxAdults": 2,
+      "pricePerNight": 5200,
+      "currency": "INR",
+      "amenities": ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Work Desk"],
+      "totalInventory": 5
+    },
+    {
+      "id": "executive-suite",
+      "name": "Executive Suite",
+      "bedConfig": "1 King Bed + Sofa Bed",
+      "maxAdults": 3,
+      "pricePerNight": 7200,
+      "currency": "INR",
+      "amenities": ["Free Wi-Fi", "Air Conditioning", "Lounge Access", "Mini Bar", "City View"],
+      "totalInventory": 4
+    },
+    {
+      "id": "family-suite",
+      "name": "Family Suite",
+      "bedConfig": "1 King Bed + Sofa Bed",
+      "maxAdults": 4,
+      "pricePerNight": 8500,
+      "currency": "INR",
+      "amenities": ["Free Wi-Fi", "Air Conditioning", "Mini Bar", "Extra Storage", "City View"],
+      "totalInventory": 3
+    }
+  ],
+  "policies": {
+    "cancellation": "Free cancellation up to 48 hours before the check-in date. Cancellations made within 48 hours of check-in are subject to a one-night charge.",
+    "pets": "Pets are not allowed at Grand Horizon Hotel, with the exception of registered service animals.",
+    "parking": "Complimentary self-parking is available on-site for all guests, subject to availability.",
+    "wifi": "Free high-speed Wi-Fi is provided throughout the property at no additional cost.",
+    "breakfast": "Complimentary breakfast is included with all room bookings and is served from 7:00 AM to 10:30 AM at Horizon Kitchen."
+  },
+  "faq": [
+    {
+      "question": "What time is check-in and check-out?",
+      "answer": "Check-in starts at 2:00 PM and check-out is by 11:00 AM. Early check-in or late check-out may be available on request, subject to availability.",
+      "tags": ["check-in", "check-out", "timing"]
+    },
+    {
+      "question": "Is breakfast included in the room price?",
+      "answer": "Yes, complimentary breakfast is included with all bookings and served from 7:00 AM to 10:30 AM.",
+      "tags": ["breakfast", "food", "included"]
+    },
+    {
+      "question": "Does the hotel have a swimming pool?",
+      "answer": "Yes, Grand Horizon Hotel has an outdoor swimming pool on the 2nd floor terrace, open daily from 6:00 AM to 9:00 PM.",
+      "tags": ["pool", "swimming", "amenities"]
+    },
+    {
+      "question": "What is the cancellation policy?",
+      "answer": "Free cancellation is available up to 48 hours before check-in. Cancellations within 48 hours are charged for one night.",
+      "tags": ["cancellation", "policy", "refund"]
+    },
+    {
+      "question": "Is parking available?",
+      "answer": "Yes, complimentary self-parking is available on-site for all guests, subject to availability.",
+      "tags": ["parking", "car"]
+    },
+    {
+      "question": "Are pets allowed?",
+      "answer": "Pets are not allowed, except for registered service animals.",
+      "tags": ["pets", "dogs", "cats", "animals"]
+    },
+    {
+      "question": "Which room is suitable for a family of four?",
+      "answer": "The Family Suite, with 1 king bed and a sofa bed, accommodates up to 4 adults and is the best fit for families.",
+      "tags": ["family", "room", "capacity", "suite"]
+    },
+    {
+      "question": "Is Wi-Fi free?",
+      "answer": "Yes, free high-speed Wi-Fi is available throughout the hotel, including all guest rooms.",
+      "tags": ["wifi", "internet"]
+    }
+  ]
+}

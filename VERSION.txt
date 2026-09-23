@@ -1,0 +1,16 @@
+Build verified: 2026-09-23 04:11 UTC
+Backend test result: 41 passed, 0 failed
+Source checksum: 0df5833f59
+
+Changelog since last build:
+- Fixed knowledge base retrieval: plural words ("policies", "rooms")
+  now normalize to match singular tags ("policy", "room"). Previously
+  a query like "what are the policies" returned nothing.
+- Policy entries now also carry a generic "policy" tag so a broad
+  policy question surfaces an overview across cancellation/pets/
+  parking/wifi/breakfast, not just one lucky match.
+- Added 3 regression tests covering this.
+
+If your local ai_provider.py contains a function named get_provider(),
+or if it calls GroqProvider() with no arguments, your copy does NOT
+match this build -- re-extract from this exact zip.
