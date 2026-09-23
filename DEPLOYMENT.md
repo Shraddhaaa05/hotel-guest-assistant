@@ -22,6 +22,10 @@ Create a Render **Web Service** connected to the GitHub repository, with:
 - Health check path: `/api/health`
 - Instance type: Free
 
+The deployed backend URL is:
+
+`https://grand-horizon-hotel-api.onrender.com`
+
 Set `CORS_ORIGINS` to the frontend's `onrender.com` URL after creating the
 frontend service. `AI_PROVIDER=mock` is the default and needs no API key.
 
@@ -29,17 +33,20 @@ frontend service. `AI_PROVIDER=mock` is the default and needs no API key.
 
 Create a second Render **Web Service** for the same repository, with:
 
+- Name: `grand-horizon-hotel-web`
 - Root directory: `frontend`
 - Runtime: Node
 - Build command: `npm install && npm run build`
 - Start command: `npm run start`
 - Instance type: Free
-- Environment variable `NEXT_PUBLIC_API_URL`: the backend's public URL, such
-  as `https://your-api.onrender.com` (no trailing slash)
+- Environment variable `NEXT_PUBLIC_API_URL`:
+  `https://grand-horizon-hotel-api.onrender.com`
 
-After creating the frontend, add its public URL to the backend's
-comma-separated `CORS_ORIGINS` setting and redeploy the backend. Open the
-frontend URL and try both a hotel FAQ question and an availability search.
+After creating the frontend, copy its public URL (for example,
+`https://grand-horizon-hotel-web.onrender.com`). In the backend service's
+Environment page, set `CORS_ORIGINS` to that URL and use **Manual Deploy →
+Deploy latest commit**. Open the frontend URL and try both a hotel FAQ question
+and an availability search.
 
 ## Local environment files
 
