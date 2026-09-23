@@ -5,8 +5,6 @@ natural-language questions about the property (check-in times, amenities,
 policies, room suitability) and check live room availability — all through a
 single chat interface.
 
-**Companion doc:** [`INTERVIEW_DEFENSE_GUIDE.md`](./INTERVIEW_DEFENSE_GUIDE.md)
-covers how to explain every part of this project in an interview.
 
 ---
 
