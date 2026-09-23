@@ -97,7 +97,7 @@ hotel-guest-assistant/
 │   │   ├── tools/availability.py   # deterministic checkAvailability()
 │   │   ├── services/               # retrieval, intent, AI providers, orchestration
 │   │   └── api/                    # health, chat, availability routes
-│   ├── tests/                      # 38 pytest tests
+│   ├── tests/                      # 42 pytest tests
 │   ├── requirements.txt
 │   └── .env.example
 ├── frontend/
@@ -357,14 +357,21 @@ tests (42 total, all passing at time of writing):
 | 11 | Backend/model failure | `test_chat_provider_failure_returns_safe_fallback_message` |
 | 12 | Frontend-to-backend end-to-end flow | All `TestClient`-based tests in `test_chat.py` / `test_availability.py` exercise the real HTTP contract the frontend uses |
 
-**Manual frontend QA checklist** (run against `npm run dev` + backend on `:8000`):
-- [ ] Welcome state shows title, tagline, suggested questions
-- [ ] Clicking a suggested question sends it and shows a loading indicator
-- [ ] Assistant response renders in a distinct bubble from the user's
-- [ ] Availability form validates check-out > check-in and guest count 1–8
-- [ ] Availability results render as a room list with prices
-- [ ] Stopping the backend and sending a message shows a network-error bubble, input re-enabled
-- [ ] Layout is usable at a mobile width (~375px) and a desktop width
+**Manual frontend QA and public deployment verification** (2026-09-23):
+- [x] The deployed frontend opened successfully and showed the welcome state,
+  suggested questions, and an availability entry point.
+- [x] Selecting “Is breakfast included?” showed the processing indicator and
+  then one focused assistant response: complimentary breakfast is included
+  from 7:00 AM to 10:30 AM.
+- [x] Guest and assistant messages rendered as separate chat bubbles.
+- [x] The availability form collected check-in, check-out, and guest count;
+  2026-10-10 to 2026-10-12 for 3 guests returned Executive Suite and Family
+  Suite with prices.
+- [x] The public backend returned a healthy response and accepted the
+  frontend origin through its configured CORS policy.
+- [x] With the frontend configured to use an unreachable backend locally,
+  sending “Is breakfast included?” showed the dedicated network-error message
+  and left the chat input available for the next request.
 
 ## 21. AI Tools Used During Development
 
