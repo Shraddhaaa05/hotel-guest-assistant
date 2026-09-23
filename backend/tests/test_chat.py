@@ -38,6 +38,17 @@ def test_chat_answers_room_suitability_question(client):
     assert "family" in data["message"].lower() or "suite" in data["message"].lower()
 
 
+def test_chat_does_not_append_unrelated_amenity_information(client):
+    """A focused room question must not become a multi-topic answer."""
+    response = client.post(
+        "/api/chat",
+        json={"message": "Which room is suitable for a family of four?", "conversation": []},
+    )
+    data = response.json()
+    assert data["type"] == "knowledge"
+    assert "wifi" not in data["message"].lower()
+
+
 def test_chat_answers_broad_plural_policies_question(client):
     """
     Regression test for a real bug found in manual testing: "what are

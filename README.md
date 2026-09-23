@@ -51,7 +51,7 @@ for the hotel.
   (`AI_PROVIDER=groq`)
 - Graceful, explicit fallback messaging — the app never pretends to know
   something it doesn't
-- 38 automated backend tests covering all 12 required evaluation scenarios
+- 42 automated backend tests covering all 12 required evaluation scenarios
 
 ## 4. Architecture
 
@@ -247,7 +247,7 @@ source venv/bin/activate
 python -m pytest tests/ -v
 ```
 
-**Result at time of writing: 38 passed, 0 failed.** Frontend automated tests
+**Result at time of writing: 42 passed, 0 failed.** Frontend automated tests
 were intentionally skipped for this scope (see Known Limitations) in favor
 of the manual QA checklist below; the full `npm run build` was verified to
 compile and statically prerender cleanly.
@@ -340,7 +340,7 @@ Guest message
 ## 20. Evaluation Scenarios and Results
 
 All 12 scenarios called out in the assignment are covered by automated
-tests (38 total, all passing at time of writing):
+tests (42 total, all passing at time of writing):
 
 | # | Scenario | Test(s) |
 |---|---|---|
